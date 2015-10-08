@@ -6,13 +6,23 @@
 						<div id="page" class="col-md-8">
 							<!-- GOOGLE MAP -->
 							<section id="contactMap">
-								<iframe src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=uk&amp;aq=&amp;sll=18.312811,-4.306641&amp;sspn=46.292419,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=United+Kingdom&amp;ll=52.352119,-2.647705&amp;spn=0.685471,1.352692&amp;t=p&amp;z=10&amp;output=embed"></iframe>							
+								<iframe src="https://www.google.co.in/maps/place/Talegaon+Dabhade,+Maharashtra/@18.7347255,73.6812284,14z/data=!4m2!3m1!1s0x3bc2b18c9f6f28ab:0xf54abf78a676fa6d?hl=en"></iframe>							
 							</section>
 							
 							<!-- START #contactForm -->
 							<section id="contactForm">
 								<h2 class="ft-heading text-upper">If You need further details - Please write us</h2>
-								<form action="contact.php" method="post">
+								{if(!empty($msg))}
+									<div class="panel panel-default">
+							<div class="panel-heading">
+								<a href="#collapseThree" data-parent="#accordion" data-toggle="collapse" class="panel-title">
+									{$msg}
+								</a>
+							</div>
+						</div>
+								{/if}
+
+								<form action="" method="post">
 									<fieldset>
 										<ul class="formFields list-unstyled">
 											<li class="row">
@@ -34,7 +44,7 @@
 											<li class="row">
 												<div class="col-md-12">
 													<label>Message <span class="required small">(Required)</span></label>
-													<textarea class="form-control"></textarea>
+													<textarea class="form-control" name="message" placeholder="Type your message here"></textarea>
 												</div>
 											</li>
 											<li class="row">
@@ -83,10 +93,10 @@
 									<h3 class="text-upper">Contact Us</h3>
 									<p>We're very approachable and would love to speak to you. Feel free to call, send us an email, Tweet us or simply complete the enquiry form.</p>
 									<ul class="contact-info list-unstyled">
-										<li class="ct-phone">+44 - 123 - 4567890</li>
-										<li class="ct-email">info@travelhub.com</li>
-										<li class="ct-facebook">www.facebook.com/travelhub</li>
-										<li class="ct-twitter">#travelhub</li>
+										<li class="ct-phone">+91 973 072 7914</li>
+										<li class="ct-email">info@planyourtours.com</li>
+										<li class="ct-facebook">www.facebook.com/tourplanners</li>
+										<li class="ct-twitter">#tourplanners</li>
 									</ul>
 								</div>
 							</div>

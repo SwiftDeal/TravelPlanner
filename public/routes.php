@@ -23,6 +23,11 @@ $routes = array(
         "controller" => "home",
         "action" => "gallery"
     ),
+	array(
+        "pattern" => "login",
+        "controller" => "auth",
+        "action" => "login"
+    ),
 );
 
 // add defined routes
